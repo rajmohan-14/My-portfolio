@@ -9,7 +9,7 @@ const Logo = () => {
     >
       <Link href='/#home'>
        <span className='text-primaryColor'>R</span>aj
-<span className='text-primaryColor'>Dev</span>
+<span className='text-primaryColor'>X</span>Dev
       </Link>
     </h1>
   )
