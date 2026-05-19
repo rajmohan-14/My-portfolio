@@ -7,6 +7,7 @@ import Footer from '@/components/Footer/Footer'
 import HeroSection from '@/components/Header/HeroSection'
 import Projects from '@/components/Projects/Projects'
 import Skills from '@/components/Skills/Skills'
+import Certifications from '@/components/Certifications/Certifications'
 // import { supabase } from "@/createClient";
 
 export default function Home() {
@@ -58,8 +59,10 @@ export default function Home() {
         <AboutMe />
         <Skills />
         <Projects />
-        <Experience />
+        <Experience /> 
+        <Certifications />
         <CallToAction />
+         
         <Footer />
       </div>
     </main>

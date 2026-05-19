@@ -7,39 +7,33 @@ import { oswald } from '@/app/fonts'
 
 const certs = [
   {
-    title: 'Python for Everybody',
-    issuer: 'Coursera / University of Michigan',
-    date: '2023',
-    link: 'https://coursera.org',
-    badge: '🐍'
-  },
-  {
-    title: 'Django Web Framework',
-    issuer: 'Meta / Coursera',
-    date: '2023',
-    link: 'https://coursera.org',
-    badge: '🎯'
-  },
-  {
-    title: 'AWS Cloud Practitioner Essentials',
-    issuer: 'Amazon Web Services',
-    date: '2024',
-    link: 'https://aws.amazon.com',
+    title: 'AWS Cloud Technical Essentials',
+    issuer: 'Amazon Web Services / Coursera',
+    date: 'April 1, 2026',
+    link: 'https://www.coursera.org/account/accomplishments/verify/6MRYJECK3Q2Z',
     badge: '☁️'
   },
-  {
-    title: 'State Level Hackathon Winner',
-    issuer: 'Government of Karnataka',
-    date: '2024',
+{
+  title: 'AI/ML for Geodata Analysis',
+  issuer: 'Indian Institute of Remote Sensing (IIRS),ISRO',
+  date: 'Sep 2024',
+  link: '',
+  badge: ''
+   },
+   {
+
+    title: 'Full Stack Development',
+    issuer: 'Infosys Springboard',
+    date: 'Sep2025',
     link: '#',
-    badge: '🏆'
+    badge: '💻'
   },
   {
-    title: 'State Level Hackathon Winner',
-    issuer: 'Tech Fest — Bihar',
-    date: '2023',
-    link: '#',
-    badge: '🏆'
+    title: 'Introduction to Large Language Models',
+    issuer: 'Google',
+    date: 'Sep 2025',
+    link: 'https://www.skills.google/public_profiles/31296080-ccd7-44fd-87f5-6396933a90d5/badges/18128033?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share',
+    badge: '🤖'
   },
 ]
 
@@ -82,7 +76,11 @@ const Certifications = () => {
             whileTap={{ scale: 0.97 }}
             className='flex flex-col gap-2 rounded-xl border border-primaryColor/20 bg-white/60 p-5 shadow-sm backdrop-blur-sm transition-all hover:border-primaryColor hover:shadow-md dark:bg-[#2a2a2a]/60'
           >
-            <span className='text-3xl'>{cert.badge}</span>
+            {cert.badge.startsWith('/') ? (
+  <img src={cert.badge} alt={cert.issuer} className='h-10 w-10 object-contain' />
+) : (
+  <span className='text-3xl'>{cert.badge}</span>
+)}
             <h4 className='text-base font-semibold text-headingText dark:text-headingDarkText'>
               {cert.title}
             </h4>
