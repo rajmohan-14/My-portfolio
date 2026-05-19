@@ -1,7 +1,6 @@
 import { poppins } from '@/app/fonts'
 import Link from 'next/link'
 import {
-  FacebookIcon,
   GithubIcon,
   LinkedInIcon,
   WhatsAppIcon

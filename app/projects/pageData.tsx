@@ -3,7 +3,6 @@ import Footer from '@/components/Footer/Footer'
 import { GithubIcon, LinkIcon } from '@/components/Icons'
 import PageTitle from '@/components/PageTitle'
 import data from '@/public/project-data.json'
-import { Breadcrumb, BreadcrumbItem } from 'aspect-ui/Breadcrumb'
 import { motion, useAnimation, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
@@ -58,9 +57,6 @@ const PageData = () => {
       <div className='mx-auto mb-4 max-w-[1440px] rounded-b-3xl bg-[#f1f6fa] shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]'>
         <div className='px-4 md:px-8 lg:px-16'>
           {/* <div className='mx-auto mb-4 max-w-[1440px] rounded-b-3xl bg-[#f1f6fa] shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]'> */}
-          <Breadcrumb className='py-10' separatorClassName='text-' >
-            <BreadcrumbItem>Home</BreadcrumbItem>
-            <BreadcrumbItem>Projects</BreadcrumbItem></Breadcrumb>
           <div className='grid grid-cols-1 grid-rows-[repeat(5_,_auto)] gap-6 mb-4 md:mb-6 lg:mb-10 sm:grid-cols-2 lg:grid-cols-3'>
             {data.map(project => (
               <motion.div

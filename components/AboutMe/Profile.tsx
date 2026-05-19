@@ -5,7 +5,6 @@ import Link from 'next/link'
 import ProfilePic from '../../public/profilePic.png'
 import HeadingSection from '../HeadingSection'
 import {
-  FacebookIcon,
   GithubIcon,
   LinkedInIcon,
   WhatsAppIcon
