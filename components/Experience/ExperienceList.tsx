@@ -16,42 +16,18 @@ const ExperienceList = () => {
   const ref = useRef(null)
   const isInView = useInView(ref)
   const experiences = [
-    {
-      title: 'React Developer',
-      company: 'PickPlugins',
-      period: 'Nov 2024 - Present',
-      location: 'Rangpur, Bangladesh',
-      website: 'pickplugins.com',
-      description: 'Developing React based Website in PickPlugins, Tech used React, JavaScript, TypeScript, Next.js.',
-      technologies: ['HTML', 'CSS', 'JS', 'React', 'Next JS', 'TS', 'WordPress', 'JSON', 'API', 'Tailwind']
-    },
-    {
-      title: 'Plugin Developer',
-      company: 'PickPlugins',
-      period: 'May 2023 - Nov 2024',
-      location: 'Rangpur, Bangladesh',
-      website: 'pickplugins.com',
-      description: 'Developing WordPress plugins in PickPlugins, Tech used React, PHP, JavaScript.',
-      technologies: ['HTML', 'CSS', 'JS', 'PHP', 'React', 'WordPress', 'JSON', 'API', 'Tailwind']
-    },
-    {
-      title: 'FrontEnd Web Developer',
-      company: 'PickPlugins',
-      period: 'Dec 2022 - May 2023',
-      location: 'Rangpur, Bangladesh',
-      website: 'pickplugins.com',
-      description: 'Developing WordPress plugins in PickPlugins, Tech used React, PHP, JavaScript.',
-      technologies: ['HTML', 'CSS', 'JS', 'PHP', 'React', 'WordPress', 'JSON', 'API', 'Tailwind']
-    },
-    {
-      title: 'Full Stack Web Developer',
-      company: 'Freelancer',
-      period: 'Dec 2020 - Present',
-      location: 'Worldwide',
-      website: 'fiverr.com',
-      description: 'Developed Full Stack web application, Tech used React, JavaScript, PHP.',
-      technologies: ['HTML', 'CSS', 'JS', 'PHP', 'React', 'WordPress', 'JSON', 'API', 'Tailwind']
-    }
+   {
+  title: 'Research Analyst',
+  company: 'MythoQuantum Explorers',
+  period: 'Nov 2024 - Jan 2025',
+  location: 'Remote / Bengaluru, India',
+  website: 'https://mythoquantum.com',
+  description: 'Conducted research and analysis as part of the MythoQuantum Explorers team, contributing to data-driven insights and exploratory projects.',
+  technologies: ['Research', 'Data Analysis', 'Python']
+},
+   
+    
+  
   ]
 
   React.useEffect(() => {

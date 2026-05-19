@@ -18,7 +18,8 @@ const certs = [
   issuer: 'Indian Institute of Remote Sensing (IIRS),ISRO',
   date: 'Sep 2024',
   link: '',
-  badge: ''
+  badge: '/badges/isro.svg'
+
    },
    {
 

@@ -107,6 +107,21 @@ const About = () => {
       }
     }
   }
+  const paraVariant4 = {
+  hidden: { opacity: 0, y: 100 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      damping: 10,
+      stiffness: 100,
+      ease: 'easeInOut',
+      duration: 0.5,
+      delay: 0.6
+    }
+  }
+}
 
   return (
     <motion.div
@@ -128,18 +143,23 @@ const About = () => {
       />
       <Paragraph
         className='text-balance w-[85%] mx-auto text-center md:w-full md:text-left'
-        text="I'm Raj Mohan, a final-year Information Science student and Backend Developer from Bengaluru. I love building full-stack web applications that solve real problems"
+        text="I’m Raj Mohan, a final-year Information Science student and Backend Developer from Bengaluru, passionate about building scalable full-stack applications that solve real-world problems."
         variants={paraVariant1}
       />
       <Paragraph
         className='text-balance w-[85%] mx-auto text-center md:w-full md:text-left'
-        text="I thrive on the challenge of staying up-to-date with the latest technologies and best practices in the industry, ensuring that every project I work on is not only functional but also cutting-edge. Whether it's creating a mobile-first design, optimizing performance, or ensuring cross-browser compatibility, I'm committed to delivering the best possible outcome for every client."
+        text="My focus lies in backend engineering, AI integrations, and creating clean, efficient systems that deliver seamless user experiences. I enjoy transforming ideas into production-ready products using modern technologies and scalable architecture."
         variants={paraVariant2}
       />
       <Paragraph
         className='text-balance w-[85%] mx-auto text-center md:w-full md:text-left'
-        text=" When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing my knowledge with the developer community."
+        text="Driven by curiosity and continuous learning, I stay updated with emerging technologies, development practices, and industry trends to build applications that are not only functional, but future-ready. From optimizing performance and designing robust APIs to developing responsive user experiences, I strive to create impactful digital solutions."
         variants={paraVariant3}
+      />
+       <Paragraph
+        className='text-balance w-[85%] mx-auto text-center md:w-full md:text-left'
+        text="Beyond coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community while continuously improving my craft as a software engineer."
+        variants={paraVariant4}
       />
     </motion.div>
   )
