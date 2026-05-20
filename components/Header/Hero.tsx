@@ -39,13 +39,12 @@ const Hero = () => {
         >
           A{' '}
           <span className='text-primaryColor transition-all duration-150 ease-in-out hover:border-b-2 hover:border-primaryColor'>
-            Python & Django Developer
-          </span>{' '}
-          building real-world web apps with a focus on backend systems,{' '}
-          <span className='text-primaryColor transition-all duration-150 ease-in-out hover:border-b-2 hover:border-primaryColor'>
-            AI integrations
-          </span>{' '}
-          and clean, scalable architecture.
+  Backend-Focused Python Developer
+</span>{' '}
+building scalable web applications, AI-powered systems, and high-performance APIs using{' '}
+<span className='text-primaryColor transition-all duration-150 ease-in-out hover:border-b-2 hover:border-primaryColor'>
+  Django & FastAPI.
+</span>
         </motion.p>
       </div>
       <div className='grid place-items-center'>
