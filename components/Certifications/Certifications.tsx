@@ -64,7 +64,7 @@ const Certifications = () => {
         variants={container}
         initial='hidden'
         animate={controls}
-        className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'
+className='mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'
       >
         {certs.map((cert, i) => (
           <motion.a

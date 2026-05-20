@@ -138,7 +138,7 @@ const IconSection = () => {
         <div className='flex flex-col items-center'>
           <span className='pb-5 text-primaryColor'>Backend</span>
 
-          <div className='grid grid-cols-3 gap-5 lg:flex lg:flex-wrap'>
+          <div className='grid grid-cols-3 gap-4 sm:grid-cols-5 lg:flex lg:flex-wrap'>
             {[
               { icon: <PythonIcon className='aspect-square w-10' />, text: 'Python', progress: 90 },
               { icon: <DjangoIcon className='aspect-square w-10' />, text: 'Django', progress: 85 },
@@ -211,7 +211,8 @@ const IconSection = () => {
       <div className='flex flex-col items-center'>
         <span className='pb-5 text-primaryColor'>Tools & Others</span>
 
-        <div className='grid grid-cols-4 gap-6 lg:flex lg:flex-wrap lg:gap-5'>
+        <div className='grid grid-cols-4 gap-3 sm:grid-cols-5 lg:flex lg:flex-wrap lg:gap-5'
+>
           {[
             { icon: <GitIcon className='aspect-square w-10' />, text: 'Git', progress: 90 },
             { icon: <GitHubIcon className='aspect-square w-10' />, text: 'GitHub', progress: 90 },

@@ -12,8 +12,9 @@ const Hero = () => {
     ease: 'easeInOut'
   }
   return (
-    <div className='mt-4 grid min-h-[600px] content-center gap-6 justify-self-center px-4 md:mt-10 md:grid-cols-2 md:px-8 lg:mt-20 lg:px-16'>
-      <div className='row-start-2 grid content-center md:row-start-1'>
+   <div className='mt-4 grid min-h-[600px] content-center gap-6 justify-self-center px-4 md:mt-10 md:grid-cols-2 md:px-8 lg:mt-20 lg:px-16 w-full max-w-full'>
+   <div className='row-start-2 grid content-center md:row-start-1 px-2'>
+
         <motion.h2
           className='text-center text-2xl text-headingText dark:text-headingDarkText md:text-left'
           initial={{ y: 100, opacity: 0 }}
@@ -49,7 +50,7 @@ const Hero = () => {
       </div>
       <div className='grid place-items-center'>
         <motion.div
-          className='aspect-square w-[280px] md:w-[90%] overflow-hidden rounded-2xl border border-primaryColor/25 drop-shadow-lg md:h-auto md:max-w-[400px]'
+          className='aspect-square w-[200px] sm:w-[250px] md:w-[90%] overflow-hidden rounded-2xl border border-primaryColor/25 drop-shadow-lg md:h-auto md:max-w-[400px]'
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ...spring, delay: 0.2 }}
