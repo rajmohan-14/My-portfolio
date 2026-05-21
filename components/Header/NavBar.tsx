@@ -16,9 +16,9 @@ const NavBar = ({className=""}) => {
       </div>
 
       {/* Mobile only */}
-      <div className='relative flex w-full items-center justify-center lg:!hidden'>
+      <div className='relative z-50 flex w-full items-center justify-center lg:!hidden'>
         <span
-          className='absolute left-6 top-1/2 -translate-y-1/2 z-50 cursor-pointer'
+          className='absolute left-6 top-1/2 z-[60] -translate-y-1/2 cursor-pointer'
           onClick={() => setopenMenu(!openMenu)}
         >
           {openMenu
@@ -27,11 +27,11 @@ const NavBar = ({className=""}) => {
           }
         </span>
         <Logo />
-        {openMenu && (
-          <div className='absolute top-[150%] left-1/2 -translate-x-1/2 z-50 w-[90%] flex flex-col items-center rounded-md bg-primaryColor bg-opacity-30 py-8 drop-shadow-md backdrop-blur-3xl'>
-            <NavMenu />
-          </div>
-        )}
+        <div
+          className={`absolute left-1/2 top-[130%] -translate-x-1/2 ${openMenu ? 'z-[999] flex w-[90%] flex-col items-center rounded-md bg-primaryColor bg-opacity-30 py-8 drop-shadow-md backdrop-blur-3xl' : 'right-full hidden'}`}
+        >
+          <NavMenu />
+        </div>
       </div>
 
     </div>
