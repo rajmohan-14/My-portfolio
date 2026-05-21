@@ -18,8 +18,7 @@ const NavMenu = () => {
       </nav>
       <span className='flex items-center gap-3'>
         <DarkMode />
-        <Link href='/NafisMahmudAyon-01733235762.pdf' className='rounded-lg bg-primaryColor px-3 py-1 text-headingDarkText inline-flex gap-2 items-center relative'>Resume <span className="inline-flex size-2 animate-ping rounded-full bg-white opacity-75"></span><span className="absolute top-1/2 -translate-y-1/2 right-3 inline-flex size-2 rounded-full bg-white"></span></Link>
-        {/* <ContactButton /> */}
+        <Link href='/Raj-Mohan-Resume.pdf' target='_blank' className='rounded-lg bg-primaryColor px-3 py-1 text-headingDarkText inline-flex gap-2 items-center relative'>Resume <span className="inline-flex size-2 animate-ping rounded-full bg-white opacity-75"></span><span className="absolute top-1/2 -translate-y-1/2 right-3 inline-flex size-2 rounded-full bg-white"></span></Link>
       </span>
     </>
   )
